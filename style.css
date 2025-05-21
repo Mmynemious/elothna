@@ -1,0 +1,51 @@
+/* Elothna Voice Reflection Style */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0C2D52; /* calming deep blue */
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#orb {
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, #D4472A, #8B2E1D);
+  border-radius: 50%;
+  animation: pulse 3s infinite;
+  box-shadow: 0 0 40px rgba(244, 109, 70, 0.4);
+  margin-bottom: 40px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(244, 109, 70, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px rgba(244, 109, 70, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(244, 109, 70, 0.4);
+  }
+}
+
+#status {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+#transcript, #response {
+  max-width: 80%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
